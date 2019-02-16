@@ -1,0 +1,9 @@
+pal = []
+for n in range(1000,9999):
+    for m in range(1000,9999):
+        iloczyn = str(n*m)
+        if len(iloczyn) == 8:
+            if iloczyn[0] == iloczyn[7] and iloczyn[1] == iloczyn[6] and iloczyn[2] == iloczyn[5] and iloczyn[3] == iloczyn[4]:
+                pal.append(n*m)
+
+print (max(pal))
